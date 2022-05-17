@@ -1,1 +1,27 @@
-/* add home page styles here */
+button {
+    background-color:darkcyan;
+    color:antiquewhite;
+    box-shadow: 1px;
+    font-size: 1.5rem;
+    font-family: 'Kalam';
+    text-shadow: 0 0 2px black;
+    border-radius: 5px;
+    margin: 5px;
+}
+h1 {
+    font-family: 'Kalam';
+    font-size: 3rem;
+    color:teal;
+    text-shadow: 0 0 2px black;
+}
+#bulletin-board {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('../assets/Board.png');
+    width: 75vw;
+    height: 75vh;
+    overflow: scroll;
+    border: 2px solid black;
+}
