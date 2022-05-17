@@ -15,3 +15,11 @@ export async function signInUser(email, password) {
         console.error(resp.error);
     }
 }
+export async function signUpUser(email, password) {
+    const resp = await client.auth.signUp({ email, password });
+    if (resp.user) {
+        return resp.user;
+    } else {
+        console.error(resp.error);
+    }
+}
