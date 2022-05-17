@@ -11,7 +11,7 @@ button {
 h1 {
     font-family: 'Kalam';
     font-size: 3rem;
-    color:teal;
+    color: darkcyan;
     text-shadow: 0 0 2px black;
 }
 #bulletin-board {
@@ -24,4 +24,7 @@ h1 {
     height: 75vh;
     overflow: scroll;
     border: 2px solid black;
+}
+button:hover {
+    opacity: 0.85;
 }
