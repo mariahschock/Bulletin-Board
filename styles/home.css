@@ -19,6 +19,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
     background-image: url('../assets/Board.png');
     width: 75vw;
     height: 75vh;
@@ -27,4 +28,32 @@ h1 {
 }
 button:hover {
     opacity: 0.85;
+}
+.post-its {
+    color:black;
+    background-color:rgb(6, 208, 208);
+    justify-content: center;
+    text-align: center;
+    height: 10em;
+    width: 10em;
+    margin: 10px;
+    box-shadow: 1px;
+}
+.post-its h2 {
+    font-size: 1.0 rem;
+    font-family: 'Kalam';
+    color:black;
+    margin: 0;
+}
+.post-its p {
+    font-size: 0.50 rem;
+    font-family: 'Kalam';
+    color: black;
+    margin: 0;
+}
+.post-its h6 {
+    font-size: 0.25 rem;
+    font-family: 'Kalam';
+    color:black;
+    margin: 0;
 }

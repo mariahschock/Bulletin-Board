@@ -2,15 +2,15 @@ export function renderPosts(post) {
     const div = document.createElement('div');
     div.classList.add('post-its');
 
-    const h1 = document.createElement('h1');
-    h1.textContent = post.Title;
+    const h2 = document.createElement('h2');
+    h2.textContent = post.Title;
 
     const p = document.createElement('p');
     p.textContent = post.Description;
 
-    const h3 = document.createElement('h3');
-    h3.textContent = post.Author;
+    const h6 = document.createElement('h6');
+    h6.textContent = post.Author;
 
-    div.append(h1, p, h3);
+    div.append(h2, p, h6);
     return div;
 }

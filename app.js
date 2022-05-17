@@ -1,12 +1,10 @@
 import { fetchPosts } from './fetch-utils.js';
 import { renderPosts } from './render-utils.js';
-// import functions and grab DOM elements
+
 const authBtn = document.getElementById('auth-button');
 const createBtn = document.getElementById('create-button');
 const postList = document.getElementById('bulletin-board');
-// let state
 
-// set event listeners 
 authBtn.addEventListener('click', async (e) => {
     e.preventDefault();
     return location.assign('/Auth-Page');
@@ -25,6 +23,4 @@ async function loadData() {
     }
 }
 loadData();
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+  
