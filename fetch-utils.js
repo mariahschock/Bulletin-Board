@@ -7,3 +7,11 @@ export function getUser() {
     return client.auth.session() && client.auth.session().user;
 }
 
+export async function signInUser(email, password) {
+    const resp = await client.auth.signIn({ email, password });
+    if (resp.user) {
+        return resp.user;
+    } else {
+        console.error(resp.error);
+    }
+}

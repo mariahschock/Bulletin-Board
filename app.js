@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
 const authBtn = document.getElementById('auth-button');
 const createBtn = document.getElementById('create-button');
+
 // let state
 
 // set event listeners 
