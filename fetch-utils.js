@@ -29,8 +29,17 @@ export async function signUpUser(email, password) {
         console.error(resp.error);
     }
 }
-export async function redirectIfLoggedIn() {
-    if (getUser()) {
-        location.assign('./Create-Page');
+
+export async function createNewPost(post) {
+    const resp = await client.from('Posts').insert(post);
+    if(resp.data) {
+        return resp.data;
+    } else {
+        console.error(resp.error);
     }
 }
+// export async function redirectIfLoggedIn() {
+//     if (getUser()) {
+//         location.assign('./Create-Page');
+//     }
+// }
