@@ -48,8 +48,8 @@ export async function logout() {
     await client.auth.signOut();
     return (window.location.href = '/');
 }
-// export async function redirectIfLoggedIn() {
-//     if (getUser()) {
-//         location.assign('./Create-Page');
-//     } 
-// }
+export async function redirectIfLoggedIn() {
+    if (getUser()) {
+        location.assign('/');
+    } 
+}
