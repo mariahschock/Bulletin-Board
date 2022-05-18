@@ -7,11 +7,6 @@ const postList = document.getElementById('bulletin-board');
 
 checkAuth();
 
-// authBtn.addEventListener('click', async (e) => {
-//     e.preventDefault();
-//     return location.assign('/Auth-Page');
-// });
-
 createBtn.addEventListener('click', () => {
     const user = getUser();
     if (user) {
@@ -36,8 +31,8 @@ async function loadData() {
         postList.append(postDiv);
     }
     const user = getUser();
-    console.log('reloading');
-    console.log(user);
+    // console.log('reloading');
+    // console.log(user);
     
     if (user) {
         authBtn.textContent = 'Logout';

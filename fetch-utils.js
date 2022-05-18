@@ -40,7 +40,7 @@ export async function createNewPost(post) {
 }
 
 export function checkAuth() {
-    const user = getUser();
+    //const user = getUser();
     // if (!user) location.assign('/');
 }
 
