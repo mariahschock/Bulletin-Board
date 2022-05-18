@@ -2,6 +2,13 @@ body {
     background-image: url('../assets/Auth-background.png');
 
 }
+header {
+    text-align: left;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
 main {
     display: flex;
     flex-direction: row;
@@ -28,4 +35,19 @@ button {
 }
 button:hover {
     opacity: 0.85;
+}
+a {
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
 }
