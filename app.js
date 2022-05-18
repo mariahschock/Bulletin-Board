@@ -49,8 +49,8 @@ async function loadData() {
 
 loadData();
 
-const likeBtn = document.getElementById('.btn');
+// const likeBtn = document.getElementById('.btn');
 
-likeBtn.addEventListener('click', () => {
-    likeBtn.classList.toggle('liked');
-});
+// likeBtn.addEventListener('click', () => {
+//     likeBtn.classList.toggle('liked');
+// });
