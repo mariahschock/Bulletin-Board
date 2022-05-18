@@ -57,3 +57,6 @@ button:hover {
     color:black;
     margin: 0;
 }
+.hide {
+    display:none;
+}

@@ -9,7 +9,7 @@ export async function fetchPosts() {
     return resp.data;
 }
 
-export async function getUser() {
+export function getUser() {
     return client.auth.session() && client.auth.session().user;
 }
 
@@ -38,8 +38,18 @@ export async function createNewPost(post) {
         console.error(resp.error);
     }
 }
+
+export function checkAuth() {
+    const user = getUser();
+    // if (!user) location.assign('/');
+}
+
+export async function logout() {
+    await client.auth.signOut();
+    return (window.location.href = '/');
+}
 // export async function redirectIfLoggedIn() {
 //     if (getUser()) {
 //         location.assign('./Create-Page');
-//     }
+//     } 
 // }

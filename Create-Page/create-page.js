@@ -1,8 +1,9 @@
-import { createNewPost } from '../fetch-utils.js';
+import { createNewPost, checkAuth } from '../fetch-utils.js';
 //import { renderPosts } from '../render-utils.js';
 
 const createForm = document.getElementById('sticky-form');
-const saveBtn = document.getElementById('save');
+
+checkAuth();
 
 createForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -17,7 +18,3 @@ createForm.addEventListener('submit', async (e) => {
     return location.assign('/');
 });
 
-// saveBtn.addEventListener('submit', async (e) => {
-//     e.preventDefault();
-
-// });
