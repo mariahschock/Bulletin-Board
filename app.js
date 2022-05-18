@@ -29,7 +29,9 @@ async function loadData() {
     for (let post of posts) {
         const postDiv = renderPosts(post);
         postList.append(postDiv);
+        
     }
+
     const user = getUser();
     // console.log('reloading');
     // console.log(user);
@@ -46,3 +48,9 @@ async function loadData() {
 }
 
 loadData();
+
+const likeBtn = document.getElementById('.btn');
+
+likeBtn.addEventListener('click', () => {
+    likeBtn.classList.toggle('liked');
+});

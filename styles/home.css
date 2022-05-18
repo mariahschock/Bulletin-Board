@@ -60,3 +60,16 @@ button:hover {
 .hide {
     display:none;
 }
+
+.btn {
+    width: 200px;
+    height: 88px;
+    position: relative;
+    display:flex;
+}
+.btn:hover {
+    opacity: 0.85;
+}
+.btn-like {
+    
+}
