@@ -49,8 +49,12 @@ async function loadData() {
 
 loadData();
 
-// const likeBtn = document.getElementById('.btn');
+const likeBtn = document.getElementById('like-button');
+const display = document.getElementById('display');
 
-// likeBtn.addEventListener('click', () => {
-//     likeBtn.classList.toggle('liked');
-// });
+let likeCount = 0;
+
+likeBtn.addEventListener('click', () => {
+    likeCount++;
+    display.innerHTML = likeCount;
+});
