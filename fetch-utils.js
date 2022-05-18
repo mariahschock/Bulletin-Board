@@ -32,7 +32,7 @@ export async function signUpUser(email, password) {
 
 export async function createNewPost(post) {
     const resp = await client.from('Posts').insert(post);
-    if(resp.data) {
+    if (resp.data) {
         return resp.data;
     } else {
         console.error(resp.error);
