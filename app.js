@@ -55,6 +55,6 @@ const display = document.getElementById('display');
 let likeCount = 0;
 
 likeBtn.addEventListener('click', () => {
-    likeCount++;
+    likeCount ++;
     display.innerHTML = likeCount;
 });
